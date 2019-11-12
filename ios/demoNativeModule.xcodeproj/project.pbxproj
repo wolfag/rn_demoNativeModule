@@ -16,6 +16,9 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* demoNativeModuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* demoNativeModuleTests.m */; };
+		4CE2A2E9237A61FF0091F28A /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2A2E7237A61FF0091F28A /* DemoViewController.m */; };
+		4CE2A2EA237A61FF0091F28A /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE2A2E8237A61FF0091F28A /* DemoViewController.xib */; };
+		4CE2A2ED237A64710091F28A /* ReactCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2A2EC237A64710091F28A /* ReactCommunicator.m */; };
 		66025EF33D643B760D098215 /* libPods-demoNativeModule-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4FC0E9244F666D46CC5D3D /* libPods-demoNativeModule-tvOS.a */; };
 		83E0E94B815AD5A5F9C804A2 /* libPods-demoNativeModule-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ACCC79F0B881844CA9639A /* libPods-demoNativeModule-tvOSTests.a */; };
 		E8ABA7E0CBCA5716207F7EB4 /* libPods-demoNativeModuleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9691A2F7BB94EA2CC2474F37 /* libPods-demoNativeModuleTests.a */; };
@@ -56,6 +59,11 @@
 		2D02E47B1E0B4A5D006451C7 /* demoNativeModule-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demoNativeModule-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* demoNativeModule-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demoNativeModule-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4973192BC372B1C8EF4F3B81 /* Pods-demoNativeModule-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoNativeModule-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-demoNativeModule-tvOSTests/Pods-demoNativeModule-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CE2A2E6237A61FF0091F28A /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DemoViewController.h; path = demoNativeModule/DemoViewController.h; sourceTree = "<group>"; };
+		4CE2A2E7237A61FF0091F28A /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DemoViewController.m; path = demoNativeModule/DemoViewController.m; sourceTree = "<group>"; };
+		4CE2A2E8237A61FF0091F28A /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DemoViewController.xib; path = demoNativeModule/DemoViewController.xib; sourceTree = "<group>"; };
+		4CE2A2EB237A64710091F28A /* ReactCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReactCommunicator.h; path = demoNativeModule/ReactCommunicator.h; sourceTree = "<group>"; };
+		4CE2A2EC237A64710091F28A /* ReactCommunicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ReactCommunicator.m; path = demoNativeModule/ReactCommunicator.m; sourceTree = "<group>"; };
 		4F9152DD33CB7E2864589635 /* Pods-demoNativeModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoNativeModuleTests.release.xcconfig"; path = "Target Support Files/Pods-demoNativeModuleTests/Pods-demoNativeModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		596FDEFCF17186CFC8C01951 /* Pods-demoNativeModule-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoNativeModule-tvOS.release.xcconfig"; path = "Target Support Files/Pods-demoNativeModule-tvOS/Pods-demoNativeModule-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		9691A2F7BB94EA2CC2474F37 /* libPods-demoNativeModuleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demoNativeModuleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +140,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				4CE2A2E6237A61FF0091F28A /* DemoViewController.h */,
+				4CE2A2E7237A61FF0091F28A /* DemoViewController.m */,
+				4CE2A2E8237A61FF0091F28A /* DemoViewController.xib */,
+				4CE2A2EB237A64710091F28A /* ReactCommunicator.h */,
+				4CE2A2EC237A64710091F28A /* ReactCommunicator.m */,
 			);
 			name = demoNativeModule;
 			sourceTree = "<group>";
@@ -161,7 +174,6 @@
 				162F57D3D25DA964841B46E7 /* Pods-demoNativeModuleTests.debug.xcconfig */,
 				4F9152DD33CB7E2864589635 /* Pods-demoNativeModuleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -290,7 +302,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 97S2C398U4;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 97S2C398U4;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -337,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				4CE2A2EA237A61FF0091F28A /* DemoViewController.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +545,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CE2A2E9237A61FF0091F28A /* DemoViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				4CE2A2ED237A64710091F28A /* ReactCommunicator.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +602,7 @@
 			baseConfigurationReference = 162F57D3D25DA964841B46E7 /* Pods-demoNativeModuleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 97S2C398U4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -607,6 +627,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 97S2C398U4;
 				INFOPLIST_FILE = demoNativeModuleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -628,6 +649,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 97S2C398U4;
 				INFOPLIST_FILE = demoNativeModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -647,6 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97S2C398U4;
 				INFOPLIST_FILE = demoNativeModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
