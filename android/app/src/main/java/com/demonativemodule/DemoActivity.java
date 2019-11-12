@@ -9,8 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 
 public class DemoActivity extends AppCompatActivity {
+
+    private Button btnGoBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,18 @@ public class DemoActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        setVar();
+        btnGoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+
+    private void setVar() {
+        btnGoBack = (Button) findViewById(R.id.btnGoBack);
     }
 
 }

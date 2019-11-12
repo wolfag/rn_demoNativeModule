@@ -14,12 +14,21 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
+  NativeModules,
 } from 'react-native';
 
+const Communicator = NativeModules.ReactCommunicator;
+
 const App = () => {
+  const onNav = () => {
+    Communicator.navigateToNative();
+  };
+
   return (
-    <View>
-      <Text>hello</Text>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>React native</Text>
+      <Button title="Nav to Native screen" onPress={onNav} />
     </View>
   );
 };
